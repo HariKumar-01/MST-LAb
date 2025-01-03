@@ -1,4 +1,4 @@
-# MST-LAb
+# MST-LAB
 
 Problem Statement ID : SIH1329
 
