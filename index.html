@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="gov-logo.png" alt="Government Logo" class="logo">
+            <span class="time">55 : 39</span>
+            <div class="search-container">
+                <input type="text" placeholder="Search Your Interest..." class="search-bar">
+            </div>
+            <h1 class="main-heading">NEWS ANALYSIS</h1>
+            <ul>
+                <li>ABOUT</li>
+                <li>REFRESH</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li>External Affairs</li>
+                <li>Law and Justice</li>
+                <li>Youth Affairs and Sports</li>
+                <li>Finance</li>
+                <li>Internal Security</li>
+                <li>Culture</li>
+                <li>Home Affairs</li>
+                <li>Science and Technology</li>
+                <li>Electronics and Information Technology</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>WELCOME TO NEWS ANALYSIS</h2>
+        </section>
+        
+    <section class="latest-articles">
+    <h2>
+        Latest Articles in 
+        <select class="language-selector" id="languageSelector">
+            <option value="english" selected>ENGLISH</option>
+            <option value="telugu">TELUGU</option>
+        </select>
+    </h2>
+    <div class="articles-container" id="articlesContainer">
+        <!-- Ministry of Home Affairs -->
+        <div class="article-card" data-english="MHA launches 100-Day Intensified Campaign on TB Elimination" 
+             data-telugu="టిబి నిర్మూలన కోసం 100 రోజుల సుదీర్ఘ ప్రచారాన్ని ప్రారంభించిన హోం వ్యవహారాల మంత్రిత్వ శాఖ">
+            <img src="ministry_home_affairs.jpg" alt="Ministry of Home Affairs">
+            <h3>MHA launches 100-Day Intensified Campaign on TB Elimination</h3>
+            <div class="department-box" data-english="Ministry of Home Affairs" data-telugu="హోం వ్యవహారాల మంత్రిత్వ శాఖ">
+                Ministry of Home Affairs
+            </div>
+            <div class="about" data-english="Focus on health programs" data-telugu="ఆరోగ్య కార్యక్రమాలపై దృష్టి">
+                About: Focus on health programs
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>85%</span>
+                <span class="neutral">Neutral:<br>10%</span>
+                <span class="negative">Negative:<br>5%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Finance -->
+        <div class="article-card" data-english="Finance Ministry releases Annual Report 2023-24" 
+             data-telugu="2023-24 వార్షిక నివేదికను విడుదల చేసిన ఆర్థిక మంత్రిత్వ శాఖ">
+            <img src="ministry_finance.jpg" alt="Ministry of Finance">
+            <h3>Finance Ministry releases Annual Report 2023-24</h3>
+            <div class="department-box" data-english="Ministry of Finance" data-telugu="ఆర్థిక మంత్రిత్వ శాఖ">
+                Ministry of Finance
+            </div>
+            <div class="about" data-english="Focus on financial stability" data-telugu="ఆర్థిక స్థిరత్వంపై దృష్టి">
+                About: Focus on financial stability
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>72%</span>
+                <span class="neutral">Neutral:<br>23%</span>
+                <span class="negative">Negative:<br>5%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Department of Internal Security -->
+        <div class="article-card" data-english="MHA issues guidelines for implementation of BNSS provisions" 
+             data-telugu="BNSS నిబంధనల అమలుకు మార్గదర్శకాలను జారీ చేసిన హోం వ్యవహారాల మంత్రిత్వ శాఖ">
+            <img src="department_internal_security.jpg" alt="Department of Internal Security">
+            <h3>MHA issues guidelines for implementation of BNSS provisions</h3>
+            <div class="department-box" data-english="Department of Internal Security" data-telugu="అంతర్గత భద్రతా విభాగం">
+                Department of Internal Security
+            </div>
+            <div class="about" data-english="Improving internal security measures" data-telugu="అంతర్గత భద్రతా చర్యలను మెరుగుపరచడం">
+                About: Improving internal security measures
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>80%</span>
+                <span class="neutral">Neutral:<br>15%</span>
+                <span class="negative">Negative:<br>5%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Culture -->
+        <div class="article-card" data-english="Sahitya Akademi announces annual awards for 2024" 
+             data-telugu="2024 సంవత్సరానికి సాహిత్య అకాడమీ వార్షిక పురస్కారాలను ప్రకటించింది">
+            <img src="ministry_culture.jpg" alt="Ministry of Culture">
+            <h3>Sahitya Akademi announces annual awards for 2024</h3>
+            <div class="department-box" data-english="Ministry of Culture" data-telugu="సంస్కృతి మంత్రిత్వ శాఖ">
+                Ministry of Culture
+            </div>
+            <div class="about" data-english="Promoting literature and arts" data-telugu="సాహిత్యం మరియు కళలను ప్రోత్సహించడం">
+                About: Promoting literature and arts
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>78%</span>
+                <span class="neutral">Neutral:<br>18%</span>
+                <span class="negative">Negative:<br>4%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Information And Broadcasting -->
+        <div class="article-card" data-english="Doordarshan announced as official broadcast partner for Hockey India League 2024-25" 
+             data-telugu="హాకీ ఇండియా లీగ్ 2024-25 కోసం అధికారిక ప్రసార భాగస్వామిగా దూరదర్శన్ ప్రకటించబడింది">
+            <img src="ministry_information_broadcasting.jpg" alt="Ministry of Information And Broadcasting">
+            <h3>Doordarshan announced as official broadcast partner for Hockey India League 2024-25</h3>
+            <div class="department-box" data-english="Ministry of Information And Broadcasting" data-telugu="సమాచారం మరియు ప్రసార మంత్రిత్వ శాఖ">
+                Ministry of Information And Broadcasting
+            </div>
+            <div class="about" data-english="Expanding sports broadcasting" data-telugu="క్రీడల ప్రసారాన్ని విస్తరించడం">
+                About: Expanding sports broadcasting
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>81%</span>
+                <span class="neutral">Neutral:<br>14%</span>
+                <span class="negative">Negative:<br>5%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+
+                <!-- Ministry of External Affairs -->
+        <div class="article-card" data-english="India strengthens bilateral ties with Japan" 
+             data-telugu="జపాన్‌తో ద్వైపాక్షిక సంబంధాలను బలోపేతం చేసిన భారతదేశం">
+            <img src="ministry_external_affairs.jpg" alt="Ministry of External Affairs">
+            <h3>India strengthens bilateral ties with Japan</h3>
+            <div class="department-box" data-english="Ministry of External Affairs" data-telugu="బాహ్య వ్యవహారాల మంత్రిత్వ శాఖ">
+                Ministry of External Affairs
+            </div>
+            <div class="about" data-english="Enhancing global partnerships" data-telugu="గ్లోబల్ భాగస్వామ్యాలను మెరుగుపరచడం">
+                About: Enhancing global partnerships
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>88%</span>
+                <span class="neutral">Neutral:<br>10%</span>
+                <span class="negative">Negative:<br>2%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Law & Justice -->
+        <div class="article-card" data-english="Supreme Court launches AI-based e-filing system" 
+             data-telugu="ఏఐ ఆధారిత ఇ-ఫైలింగ్ వ్యవస్థను ప్రారంభించిన సుప్రీం కోర్టు">
+            <img src="ministry_law_justice.jpg" alt="Ministry of Law & Justice">
+            <h3>Supreme Court launches AI-based e-filing system</h3>
+            <div class="department-box" data-english="Ministry of Law & Justice" data-telugu="న్యాయ మరియు న్యాయ మంత్రిత్వ శాఖ">
+                Ministry of Law & Justice
+            </div>
+            <div class="about" data-english="Promoting legal tech innovations" data-telugu="న్యాయ సాంకేతిక ఆవిష్కరణలను ప్రోత్సహించడం">
+                About: Promoting legal tech innovations
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>80%</span>
+                <span class="neutral">Neutral:<br>15%</span>
+                <span class="negative">Negative:<br>5%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Science and Technology -->
+        <div class="article-card" data-english="India successfully tests reusable space vehicle" 
+             data-telugu="తిరిగి ఉపయోగించగల స్పేస్ వాహనాన్ని విజయవంతంగా పరీక్షించిన భారతదేశం">
+            <img src="ministry_science_technology.jpg" alt="Ministry of Science and Technology">
+            <h3>India successfully tests reusable space vehicle</h3>
+            <div class="department-box" data-english="Ministry of Science and Technology" data-telugu="విజ్ఞాన మరియు సాంకేతిక మంత్రిత్వ శాఖ">
+                Ministry of Science and Technology
+            </div>
+            <div class="about" data-english="Advancing aerospace technologies" data-telugu="ఏరోస్పేస్ సాంకేతికతలను అభివృద్ధి చేయడం">
+                About: Advancing aerospace technologies
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>92%</span>
+                <span class="neutral">Neutral:<br>6%</span>
+                <span class="negative">Negative:<br>2%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Youth Affairs and Sports -->
+        <div class="article-card" data-english="India's U-19 cricket team wins World Cup" 
+             data-telugu="అండర్-19 ప్రపంచ కప్ గెలిచిన భారత క్రికెట్ జట్టు">
+            <img src="ministry_youth_sports.jpg" alt="Ministry of Youth Affairs and Sports">
+            <h3>India's U-19 cricket team wins World Cup</h3>
+            <div class="department-box" data-english="Ministry of Youth Affairs and Sports" data-telugu="యువ వ్యవహారాలు మరియు క్రీడల మంత్రిత్వ శాఖ">
+                Ministry of Youth Affairs and Sports
+            </div>
+            <div class="about" data-english="Highlighting youth sports achievements" data-telugu="యువ క్రీడా విజయాలను హైలైట్ చేయడం">
+                About: Highlighting youth sports achievements
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>87%</span>
+                <span class="neutral">Neutral:<br>10%</span>
+                <span class="negative">Negative:<br>3%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+        <!-- Ministry of Electronics and Information Technology -->
+        <div class="article-card" data-english="India introduces national cybersecurity strategy" 
+             data-telugu="జాతీయ సైబర్ భద్రతా వ్యూహాన్ని ప్రవేశపెట్టిన భారతదేశం">
+            <img src="ministry_electronics_it.jpg" alt="Ministry of Electronics and Information Technology">
+            <h3>India introduces national cybersecurity strategy</h3>
+            <div class="department-box" data-english="Ministry of Electronics and Information Technology" data-telugu="ఎలక్ట్రానిక్స్ మరియు సమాచార సాంకేతిక మంత్రిత్వ శాఖ">
+                Ministry of Electronics and Information Technology
+            </div>
+            <div class="about" data-english="Focusing on digital security" data-telugu="డిజిటల్ భద్రతపై దృష్టి">
+                About: Focusing on digital security
+            </div>
+            <div class="sentiment">
+                <span class="positive">Positive:<br>83%</span>
+                <span class="neutral">Neutral:<br>14%</span>
+                <span class="negative">Negative:<br>3%</span>
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+
+       </div>
+     </section>
+ 
+
+        <script>
+            document.getElementById("languageSelector").addEventListener("change", function () {
+                const language = this.value;
+                const articles = document.querySelectorAll(".article-card");
+
+                articles.forEach(article => {
+                    const heading = article.querySelector("h3");
+                    heading.textContent = article.getAttribute(`data-${language.toLowerCase()}`);
+
+                    const departmentBox = article.querySelector(".department-box");
+                    departmentBox.textContent = departmentBox.getAttribute(`data-${language.toLowerCase()}`);
+                });
+            });
+        </script>
+    </main>
+</body>
+</html>
