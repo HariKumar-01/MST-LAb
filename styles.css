@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
+
 header {
     background-color: #f0f0f0
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -85,7 +85,7 @@ header {
     color: #000;
 }
 
-/* Navbar Styles */
+
 nav ul {
     display: flex;
     list-style: none;
