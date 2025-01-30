@@ -13,7 +13,13 @@ The Press Information Bureau (PIB) is the nodal agency of the Government of Indi
 
 HOME PAGE:
 
-![Home](https://github.com/user-attachments/assets/39e62eb9-d244-4dde-a06a-b760df5f7859)
+![Screenshot 2025-01-31 022214](https://github.com/user-attachments/assets/c8e81508-5d8b-4d6d-88bb-404d1d682447)
+
+![Screenshot 2025-01-31 022234](https://github.com/user-attachments/assets/b0f9e66c-50ef-4279-b09d-bcbce0419a11)
+
+![Screenshot 2025-01-31 022314](https://github.com/user-attachments/assets/709360dc-8c6e-40c8-9127-cba9262bba70)
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Ministry page
