@@ -1,73 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>News Analysis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Analysis | WIRED Style</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <div class="navbar">
-            <img src="gov-logo.png" alt="Government Logo" class="logo">
-            <span class="time">55 : 39</span>
-            <div class="search-container">
-                <input type="text" placeholder="Search Your Interest..." class="search-bar">
+            <div class="logo-container">
+                <span class="wired-logo">NEWS ANALYSIS</span>
             </div>
-            <h1 class="main-heading">NEWS ANALYSIS</h1>
-            <ul>
-                <li>ABOUT</li>
-                <li>REFRESH</li>
-            </ul>
+            <nav class="nav-menu">
+                <ul>
+                    <li>SECURITY</li>
+                    <li>POLITICS</li>
+                    <li>ECONOMY</li>
+                    <li>SCIENCE</li>
+                    <li>CULTURE</li>
+                    <li>TECH</li>
+                    <li>WORLD</li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li>External Affairs</li>
-                <li>Law and Justice</li>
-                <li>Youth Affairs and Sports</li>
-                <li>Finance</li>
-                <li>Internal Security</li>
-                <li>Culture</li>
-                <li>Home Affairs</li>
-                <li>Science and Technology</li>
-                <li>Electronics and Information Technology</li>
-            </ul>
-        </nav>
     </header>
-    
+
+    <!-- Category Menu -->
+    <nav class="category-menu">
+        <ul>
+            <li><a href="external-affairs.html">External Affairs</a></li>
+            <li><a href="external-affairs.html">Law & Justice</a></li>
+            <li><a href="external-affairs.html">Youth & Sports</a></li>
+            <li><a href="external-affairs.html">Finance</a></li>
+            <li><a href="external-affairs.html">Internal Security</a></li>
+            <li><a href="external-affairs.html">Culture</a></li>
+            <li><a href="external-affairs.html">Home Affairs</a></li>
+            <li><a href="external-affairs.html">Science & Tech</a></li>
+            <li><a href="external-affairs.html">INFORMATION TECHNOLOGY</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
     <main>
-        <section class="hero">
-            <h2>WELCOME TO NEWS ANALYSIS</h2>
+        <div class="news-section">
+    <!-- LEFT COLUMN (TODAY'S PICKS) -->
+    <div class="left-column">
+        <div class="section-title">Today's Picks</div>
+        <div class="story-item">
+            <img src="plane.png" alt="Plane Crash">
+            <h3>Washington DC Plane Crash Highlights</h3>
+            <p>Trump Says US Is 'In Mourning' After No Survivors From Plane Crash</p>
+        </div>
+        <div class="story-item">
+            <img src="nothing.jpeg" alt="Nothing Phone">
+            <h3>Nothing Phone 3a Series</h3>
+            <p>India Launch Date Set for March 4; Flipkart Availability Confirmed</p>
+        </div>
+    </div>
+
+    <!-- MIDDLE COLUMN (FEATURED STORY) -->
+    <div class="middle-column">
+        <div class="featured-story">
+            <img src="deepseek.png" alt="Ministry of Finance">
+            <h2>Exposed DeepSeek Database Revealed Chat Prompts</h2>
+            <p>China-based DeepSeek has exploded in popularity, drawing greater scrutiny. Case in point: Security researchers found more than 1 million records, including user data and API keys, in an open database.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT COLUMN (MOST RECENT) -->
+    <div class="right-column">
+        <div class="section-title">Most Recent</div>
+        <ul class="recent-list">
+            <li>
+                <img src="kumbh.jpeg" alt="Maha Kumbh">
+                <div>
+                    <h4>Maha Kumbh stampede: Judicial commission to finish probe in a month</h4>
+                    <p>Harish Kumar and panel members</p>
+                </div>
+            </li>
+            <li>
+                <img src="it.png" alt="IT">
+                <div>
+                    <h4>IT minister Hari Kumar</h4>
+                    <p>Privacy issue with china's DeepSeek</p>
+                </div>
+            </li>
+           <li>
+                <img src="ind.png" alt="IND">
+                <div>
+                    <h4>IND vs ENG, 3rd T20I</h4>
+                    <p>Kevin Pietersen slams India's batting order after Rajkot loss</p>
+                </div>
+            </li>
+            <li>
+                <img src="market.png" alt="market">
+                <div>
+                    <h4>China's AI DeepSeek</h4>
+                    <p>DeepSeek tech wipeout erases more than $1 trillion in market cap</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
         </section>
-        
-    <section class="latest-articles">
-    <h2>
+    </main>
+    <!-- Include Wired Elements Library -->
+<script type="module" src="https://unpkg.com/wired-elements"></script>
+
+<section class="latest-articles">
+     <h2>
         Latest Articles in 
         <select class="language-selector" id="languageSelector">
             <option value="english" selected>ENGLISH</option>
             <option value="telugu">TELUGU</option>
         </select>
     </h2>
+
     <div class="articles-container" id="articlesContainer">
         <!-- Ministry of Home Affairs -->
-        <div class="article-card" data-english="MHA launches 100-Day Intensified Campaign on TB Elimination" 
+        <wired-card class="article-card" data-english="MHA launches 100-Day Intensified Campaign on TB Elimination" 
              data-telugu="టిబి నిర్మూలన కోసం 100 రోజుల సుదీర్ఘ ప్రచారాన్ని ప్రారంభించిన హోం వ్యవహారాల మంత్రిత్వ శాఖ">
             <img src="ministry_home_affairs.jpg" alt="Ministry of Home Affairs">
             <h3>MHA launches 100-Day Intensified Campaign on TB Elimination</h3>
-            <div class="department-box" data-english="Ministry of Home Affairs" data-telugu="హోం వ్యవహారాల మంత్రిత్వ శాఖ">
+            <wired-badge class="department-box" data-english="Ministry of Home Affairs" data-telugu="హోం వ్యవహారాల మంత్రిత్వ శాఖ">
                 Ministry of Home Affairs
-            </div>
-            <div class="about" data-english="Focus on health programs" data-telugu="ఆరోగ్య కార్యక్రమాలపై దృష్టి">
+            </wired-badge>
+            <p class="about" data-english="Focus on health programs" data-telugu="ఆరోగ్య కార్యక్రమాలపై దృష్టి">
                 About: Focus on health programs
-            </div>
+            </p>
             <div class="sentiment">
-                <span class="positive">Positive:<br>85%</span>
-                <span class="neutral">Neutral:<br>10%</span>
-                <span class="negative">Negative:<br>5%</span>
-            <div>
-                    <button class="read-more" onclick="window.location.href='https://www.etvbharat.com/en/!bharat/mha-asks-states-and-uts-to-organise-a-100-day-intensified-campaign-in-prison-to-eliminate-tuberculosis-enn25010903079';">Read More</button>
-                </div>
-                
+                <wired-badge class="positive">Positive:<br>85%</wired-badge>
+                <wired-badge class="neutral">Neutral:<br>10%</wired-badge>
+                <wired-badge class="negative">Negative:<br>5%</wired-badge>
+            </div>
+            <wired-button class="read-more">Read More</wired-button>
+        </wired-card>
 
-        <!-- Ministry of Finance -->
+           <!-- Ministry of Finance -->
         <div class="article-card" data-english="Finance Ministry releases Annual Report 2023-24" 
              data-telugu="2023-24 వార్షిక నివేదికను విడుదల చేసిన ఆర్థిక మంత్రిత్వ శాఖ">
             <img src="ministry_finance.jpg" alt="Ministry of Finance">
@@ -241,9 +319,8 @@
 
        </div>
      </section>
- 
 
-        <script>
+ <script>
             document.getElementById("languageSelector").addEventListener("change", function () {
                 const language = this.value;
                 const articles = document.querySelectorAll(".article-card");
@@ -257,6 +334,6 @@
                 });
             });
         </script>
-    </main>
+
 </body>
 </html>
