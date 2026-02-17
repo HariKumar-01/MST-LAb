@@ -102,10 +102,8 @@
         .language-selector {
             font-size: 16px;
             padding: 5px;
-            margin-left: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .articles-container {
@@ -154,7 +152,7 @@
             font-weight: bold;
             text-align: center;
             color: black;
-            margin-bottom: 10px;
+            margin: 10px 0;
             border-radius: 3px;
         }
 
@@ -182,7 +180,6 @@
     </style>
 </head>
 <body>
-    <!-- HEADER -->
     <header class="navbar">
         <div class="logo">NEWS ANALYSIS</div>
         <nav class="nav-menu">
@@ -198,12 +195,11 @@
         </div>
     </header>
 
-    <!-- Category Menu -->
     <nav class="category-menu">
         <ul>
             <li>External Affairs</li>
-            <li>LAW & JUSTICS</li>
-            <LI> YOUTH $ SPORTS</li>
+            <li>LAW & JUSTICE</li>
+            <li>YOUTH & SPORTS</li>
             <li>Finance</li>
             <li>INTERNAL SECURITY</li>
             <li>CULTURE</li>
@@ -213,102 +209,93 @@
         </ul>
     </nav>
 
-    <!-- Latest Articles Section -->
     <section class="latest-articles">
         <h2>Latest News on External Affairs</h2>
         <div class="language-selector">
             <div id="google_translate_element"></div>
-            <label for="language">Select Language:</label>
-            <select id="language" onchange="translatePage()">
-                <option value="en">English</option>
-                <option value="hi">Hindi</option>
-            </select>
         </div>
+        
         <div class="articles-container">
-    <!-- Article 1 -->
-    <div class="article-card">
-        <img src="g20.png" alt="Article Image 1">
-        <h3>India Hosts G20 Summit</h3>
-        <p>India successfully hosted the G20 summit, focusing on global economic stability and sustainable development.</p>
-        <button class="read-more">Read More</button>
-        <div class="department-box">External Affairs</div>
-        <div class="sentiment">
-            <span class="positive">Positive:<br>60%</span>
-            <span class="neutral">Neutral:<br>20%</span>
-            <span class="negative">Negative:<br>20%</span>
+            <div class="article-card">
+                <img src="images/g20.png" alt="Article Image 1">
+                <h3>India Hosts G20 Summit</h3>
+                <p>India successfully hosted the G20 summit, focusing on global economic stability and sustainable development.</p>
+                <button class="read-more">Read More</button>
+                <div class="department-box">External Affairs</div>
+                <div class="sentiment">
+                    <span class="positive">Positive:<br>60%</span>
+                    <span class="neutral">Neutral:<br>20%</span>
+                    <span class="negative">Negative:<br>20%</span>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/japan.png" alt="Article Image 2">
+                <h3>India and Japan Strengthen Bilateral Ties</h3>
+                <p>India and Japan have agreed to enhance their strategic partnership, focusing on defense cooperation and economic collaboration.</p>
+                <button class="read-more">Read More</button>
+                <div class="department-box">External Affairs</div>
+                <div class="sentiment">
+                    <span class="positive">Positive:<br>41%</span>
+                    <span class="neutral">Neutral:<br>36%</span>
+                    <span class="negative">Negative:<br>12%</span>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/usa.png" alt="Article Image 3">
+                <h3>India-US Trade Talks Yield Positive Outcomes</h3>
+                <p>Recent trade discussions between India and the United States have led to agreements aimed at reducing tariffs and enhancing market access.</p>
+                <button class="read-more">Read More</button>
+                <div class="department-box">External Affairs</div>
+                <div class="sentiment">
+                    <span class="positive">Positive:<br>80%</span>
+                    <span class="neutral">Neutral:<br>10%</span>
+                    <span class="negative">Negative:<br>10%</span>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/climate.png" alt="Article Image 4">
+                <h3>India Participates in Climate Change Conference</h3>
+                <p>At the recent international climate conference, India reiterated its commitment to reducing carbon emissions and promoting sustainable practices.</p>
+                <button class="read-more">Read More</button>
+                <div class="department-box">External Affairs</div>
+                <div class="sentiment">
+                    <span class="positive">Positive:<br>70%</span>
+                    <span class="neutral">Neutral:<br>5%</span>
+                    <span class="negative">Negative:<br>25%</span>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/aus.png" alt="Article Image 5">
+                <h3>India and Australia Sign Defense Agreement</h3>
+                <p>India and Australia have entered into a new defense agreement to enhance military cooperation and ensure regional security.</p>
+                <button class="read-more">Read More</button>
+                <div class="department-box">External Affairs</div>
+                <div class="sentiment">
+                    <span class="positive">Positive:<br>10%</span>
+                    <span class="neutral">Neutral:<br>30%</span>
+                    <span class="negative">Negative:<br>60%</span>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/peace.png" alt="Article Image 6">
+                <h3>India Engages in Peace Talks with Neighboring Countries</h3>
+                <p>In a bid to promote regional stability, India has initiated peace talks with neighboring countries to resolve longstanding disputes.</p>
+                <button class="read-more">Read More</button>
+                <div class="department-box">External Affairs</div>
+                <div class="sentiment">
+                    <span class="positive">Positive:<br>5%</span>
+                    <span class="neutral">Neutral:<br>15%</span>
+                    <span class="negative">Negative:<br>80%</span>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Article 2 -->
-    <div class="article-card">
-        <img src="japan.png" alt="Article Image 2">
-        <h3>India and Japan Strengthen Bilateral Ties</h3>
-        <p>India and Japan have agreed to enhance their strategic partnership, focusing on defense cooperation and economic collaboration.</p>
-        <button class="read-more">Read More</button>
-        <div class="department-box">External Affairs</div>
-        <div class="sentiment">
-            <span class="positive">Positive:<br>41%</span>
-            <span class="neutral">Neutral:<br>36%</span>
-            <span class="negative">Negative:<br>12%</span>
-        </div>
-    </div>
-    <!-- Article 3 -->
-    <div class="article-card">
-        <img src="usa.png" alt="Article Image 3">
-        <h3>India-US Trade Talks Yield Positive Outcomes</h3>
-        <p>Recent trade discussions between India and the United States have led to agreements aimed at reducing tariffs and enhancing market access.</p>
-        <button class="read-more">Read More</button>
-        <div class="department-box">External Affairs</div>
-        <div class="sentiment">
-            <span class="positive">Positive:<br>80%</span>
-            <span class="neutral">Neutral:<br>10%</span>
-            <span class="negative">Negative:<br>10%</span>
-        </div>
-    </div>
-    <!-- Article 4 -->
-    <div class="article-card">
-        <img src="climate.png" alt="Article Image 4">
-        <h3>India Participates in Climate Change Conference</h3>
-        <p>At the recent international climate conference, India reiterated its commitment to reducing carbon emissions and promoting sustainable practices.</p>
-        <button class="read-more">Read More</button>
-        <div class="department-box">External Affairs</div>
-        <div class="sentiment">
-            <span class="positive">Positive:<br>70%</span>
-            <span class="neutral">Neutral:<br>5%</span>
-            <span class="negative">Negative:<br>25%</span>
-        </div>
-    </div>
-    <!-- Article 5 -->
-    <div class="article-card">
-        <img src="aus.png" alt="Article Image 5">
-        <h3>India and Australia Sign Defense Agreement</h3>
-        <p>India and Australia have entered into a new defense agreement to enhance military cooperation and ensure regional security.</p>
-        <button class="read-more">Read More</button>
-        <div class="department-box">External Affairs</div>
-        <div class="sentiment">
-            <span class="positive">Positive:<br>10%</span>
-            <span class="neutral">Neutral:<br>30%</span>
-            <span class="negative">Negative:<br>8\60%</span>
-        </div>
-    </div>
-    <!-- Article 6 -->
-    <div class="article-card">
-        <img src="peace.png" alt="Article Image 6">
-        <h3>India Engages in Peace Talks with Neighboring Countries</h3>
-        <p>In a bid to promote regional stability, India has initiated peace talks with neighboring countries to resolve longstanding disputes.</p>
-        <button class="read-more">Read More</button>
-        <div class="department-box">External Affairs</div>
-        <div class="sentiment">
-            <span class="positive">Positive:<br>5%</span>
-            <span class="neutral">Neutral:<br>15%</span>
-            <span class="negative">Negative:<br>80%</span>
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</html>
+    </section>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
